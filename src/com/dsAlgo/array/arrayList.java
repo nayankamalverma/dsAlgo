@@ -14,6 +14,7 @@ public class arrayList {
         }
         Collections.reverse(arr);
         System.out.println(arr);
+        System.out.println(!arr.contains(4));
         arr.clear();
         sc.close();
     }
