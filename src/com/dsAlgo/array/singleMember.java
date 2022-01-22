@@ -11,7 +11,7 @@ public class singleMember {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        Arrays.parallelSort(arr);
+        Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
 
         }
