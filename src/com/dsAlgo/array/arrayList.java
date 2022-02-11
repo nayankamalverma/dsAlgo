@@ -15,7 +15,13 @@ public class arrayList {
         Collections.reverse(arr);
         System.out.println(arr);
         System.out.println(!arr.contains(4));
-        arr.clear();
+        int x=arr.remove(3);
+        arr.add(0,x);
+        System.out.println(arr);
         sc.close();
+    }
+
+    public static void rotateArray(int[] arr,int k){
+
     }
 }

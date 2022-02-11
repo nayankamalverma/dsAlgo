@@ -9,10 +9,8 @@ public class maxAndMinAmong3 {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
-
         System.out.println("maximum value among 3 number is "+ functionMain.max(a,b,c));
         System.out.println("minimum value among 3 number is "+ functionMain.min(a,b,c) );
-
         boolean x = functionMain.prime(functionMain.max(a,b,c));
         boolean y = functionMain.armstrong(functionMain.max(a,b,c));
         if(x){
@@ -26,6 +24,7 @@ public class maxAndMinAmong3 {
         }else {
             System.out.println(functionMain.max(a,b,c) +" Not a Armstrong number.");
         }
+
     }
 
 
