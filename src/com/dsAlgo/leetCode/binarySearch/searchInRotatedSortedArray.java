@@ -23,7 +23,7 @@ public class searchInRotatedSortedArray {
 
     public static int binarySearch(int[] arr,int target,int s, int e){
 
-        while(s<=e){
+        while(s <=e){
             int m=s+(e-s)/2;
             if(arr[m]==target){
                 return m;
