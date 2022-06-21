@@ -47,7 +47,6 @@ public class countItemsMatchingARule {
                 arr.get(i).add(sc.next());
             }
         }
-
         System.out.println(matchRuleCount(arr,ruleKey,ruleValue));
     }
 

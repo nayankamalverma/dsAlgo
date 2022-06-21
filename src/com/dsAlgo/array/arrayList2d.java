@@ -16,7 +16,6 @@ public class arrayList2d {
              c= sc.nextInt();
             for (int j = 0; j < c; j++) {
                 list.get(i).add(sc.nextInt());
-
             }
         }
         System.out.println(list.get(1).get(2));
