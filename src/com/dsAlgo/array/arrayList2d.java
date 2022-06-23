@@ -10,7 +10,7 @@ public class arrayList2d {
         System.out.println("Enter no. of rows: ");
         int r= sc.nextInt(),c;
         for (int i = 0; i < r; i++) {
-            list.add(new ArrayList<>());
+
         }
         for (int i = 0; i < r; i++) {
              c= sc.nextInt();
