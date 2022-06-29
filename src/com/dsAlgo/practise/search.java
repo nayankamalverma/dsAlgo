@@ -1,6 +1,5 @@
 package com.dsAlgo.practise;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class search {
@@ -14,21 +13,21 @@ public class search {
         }
         System.out.println("Enter element to be searched: ");
         int target=sc.nextInt();
-        System.out.println("index of element is "+ search.orderAgnosticBinarySearch(arr,target) );
+        System.out.println("index of element is "+ binarySearch(arr,target) );
     }
 
     public static int binarySearch(int[] arr,int target){
-        int start=0,end= arr.length-1;
-        while (start<=end){
-            int mid = start+ (end-start)/2;
-            if(target<arr[mid]) {
-                end = mid - 1;
-            }else if (target>arr[mid]){
-                start = mid+1;
-            }else {
-
-                //ans found
-                return mid;
+        if(arr.length==1 && arr[0]==target)
+            return 0;
+        int s=0,e=arr.length-1;
+        while(s<=e){
+            int m = s + (e-s)/2;
+            if(arr[m]==target){
+                return m;
+            }else if(arr[m]>target){
+                e=m-1;
+            }else{
+                s = m+1;
             }
         }
         return -1;

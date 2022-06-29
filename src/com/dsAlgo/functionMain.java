@@ -1,6 +1,9 @@
 package com.dsAlgo;
 
 public class functionMain {
+    public static void main(String[] args) {
+        System.out.println(pallindrome(1221));
+    }
 
 
     public static int min(int x, int y, int z) { //using function overloading
@@ -44,6 +47,17 @@ public class functionMain {
             n /= 10;
         }
         return sum == temp;
+    }
+
+    public static boolean pallindrome(int n){
+        int temp=n;
+        int rev=0;
+        while(n>0){
+            int dig= n%10;
+            rev=(rev*10)+dig;
+            n/=10;
+        }
+        return rev==temp;
     }
 
     public static boolean prime(int n) {
