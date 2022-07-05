@@ -25,7 +25,6 @@ public class array2d {
         for (int[] i : arr) {
             System.out.println(Arrays.toString(i));
         }
-
         sc.close();
     }
 }
