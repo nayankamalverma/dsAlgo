@@ -1,23 +1,21 @@
 package com.dsAlgo.String;
 
-import java.util.ArrayList;
-
 public class truncateSentence {
     public static void main(String[] args) {
-        String s= "Hello how are you dsgfd fgfdg";
+        String s= "Hello 87 776 send find";
         int k=4;
         System.out.println(truncateSentences(s,k));
     }
 
     private static String truncateSentences(String s, int k) {
         String[] str= s.split(" ");
-        String ans="";
+        StringBuilder ans= new StringBuilder();
         for(int i=0;i<k;i++){
-            ans += str[i];
+            ans.append(str[i]);
             if(i==k-1)
                 break;
-            ans+=" ";
+            ans.append(" ");
         }
-        return ans;
+        return ans.toString();
     }
 }
