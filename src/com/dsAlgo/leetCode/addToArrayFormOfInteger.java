@@ -16,18 +16,16 @@ public class addToArrayFormOfInteger {
         int k= sc.nextInt();
         System.out.println(addToArrayForm(arr,k));
     }
-    public static List<Long> addToArrayForm(int[] num, int k) {
-        ArrayList<Long> arr=new ArrayList<>();
-        long n=0;
-        for(int i=0;i<num.length;i++){
-            n=n*10+num[i];
+    public static List<Integer> addToArrayForm(int[] num, int k) {
+        List<Integer> ans= new ArrayList<>();
+        for(int i=num.length-1;i>=0;i--){
+            ans.add(0,(num[i]+k)%10);
+            k=(num[i]+k)/10;
         }
-        n=n+k;
-        while(n!=0){
-            arr.add(n%2);
-            n=n/10;
+        while(k>0){
+            ans.add(0,k%10);
+            k/=10;
         }
-        Collections.reverse(arr);
-        return arr;
+        return ans;
     }
 }

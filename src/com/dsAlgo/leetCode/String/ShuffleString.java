@@ -1,4 +1,4 @@
-package com.dsAlgo.String;
+package com.dsAlgo.leetCode.String;
 
 //https://leetcode.com/problems/shuffle-string/
 

@@ -1,4 +1,4 @@
-package com.dsAlgo.String;
+package com.dsAlgo.leetCode.String;
 
 public class truncateSentence {
     public static void main(String[] args) {
