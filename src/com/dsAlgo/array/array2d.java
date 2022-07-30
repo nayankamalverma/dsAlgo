@@ -6,12 +6,13 @@ import java.util.Scanner;
 public class array2d {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int arr[][], r,c;
+        int r,c;
         System.out.print("Enter no. of rows and column: ");
         r = sc.nextInt();
-        c = sc.nextInt();
-        arr = new int[r][c];
+        int[][] arr = new int[r][];
         for (int i = 0; i < arr.length; i++) {
+            c = sc.nextInt();
+            arr[i]= new int[c];
             for (int j = 0; j < arr[i].length; j++) {
                 arr[i][j] = sc.nextInt();
             }

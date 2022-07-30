@@ -1,10 +1,11 @@
 package com.dsAlgo.sorting;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] arr= new int[]{2,1,5,1,3};
+        int[] arr= new int[]{3,30,34,9,5};
         insertionSort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -12,7 +13,7 @@ public class InsertionSort {
     private static void insertionSort(int[] arr) {
         for (int i = 0; i < arr.length-1 ; i++) {
             for (int j = i+1; j >0 ; j--) {
-                if(arr[j-1]<arr[j]){
+                if(Long.parseLong(arr[j-1]+arr[j]+"")>=Long.parseLong(arr[j]+arr[j-1]+"")){
                     break;
                 }else{
                     int temp =arr[j];
@@ -20,6 +21,7 @@ public class InsertionSort {
                     arr[j-1]=temp;
                 }
             }
+
         }
     }
 

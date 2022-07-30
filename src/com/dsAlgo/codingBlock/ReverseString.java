@@ -1,4 +1,4 @@
-package com.dsAlgo.recursion;
+package com.dsAlgo.codingBlock;
 
 import java.util.Arrays;
 
