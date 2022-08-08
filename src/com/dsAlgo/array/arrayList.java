@@ -17,6 +17,7 @@ public class arrayList {
         System.out.println(!arr.contains(4));
         int x=arr.remove(3);
         arr.add(0,x);
+        Collections.sort(arr);
         System.out.println(arr);
         sc.close();
     }
