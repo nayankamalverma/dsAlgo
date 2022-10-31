@@ -15,9 +15,10 @@ import java.util.Arrays;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] arr= new int[]{5,2,3,1,4};
-        selectionSort(arr);
-        System.out.println(Arrays.toString(arr));
+        int[] arr= new int[]{67,43,97,45,45,5,2,3,1,4};
+        // selectionSort(arr);
+        selectSort(arr);
+        System.out.println(Arrays.toString(arr));   
     }
 
     private static void selectionSort(int[] arr) {
@@ -40,4 +41,21 @@ public class SelectionSort {
         }
         return max;
     }
+
+    private static void selectSort(int[] arr){
+        for (int i = 0; i < arr.length-2; i++) {
+            int last= arr.length-i-1;
+            boolean noSwap=true;
+            for(int j=0;j<last;j++){
+                if(arr[j]>arr[last]){
+                    int temp=arr[j];
+                    arr[j]=arr[last];
+                    arr[last]=temp;
+                    noSwap=false;
+                }
+            }
+            if(noSwap)return;
+        }
+    } 
+
 }
