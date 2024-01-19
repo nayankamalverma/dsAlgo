@@ -13,6 +13,7 @@ public class fiboo {
         Scanner sc = new Scanner(System.in);
         x = sc.nextInt();
         fibbo(x);
+        sc.close();
     }
 
     private static void fibbo(int x) {

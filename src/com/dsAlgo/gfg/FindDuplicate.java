@@ -7,6 +7,7 @@ public class FindDuplicate {
     public static void main(String[] args) {
         int[] arr ={2,1,3,2,3};
         int n=5;
+
         System.out.println(duplicates(arr,n));
     }
 

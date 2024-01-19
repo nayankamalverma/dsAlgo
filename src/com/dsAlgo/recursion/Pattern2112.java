@@ -19,9 +19,7 @@ public class Pattern2112 {
     }
 
     private static void printPattern(int n) {
-        if(n==0){
-            return ;
-        }
+        if(n==0) return;
         System.out.println(n);
         printPattern(n-1);
         System.out.println(n);

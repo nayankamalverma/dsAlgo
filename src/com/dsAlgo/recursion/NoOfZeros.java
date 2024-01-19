@@ -16,7 +16,6 @@ public class NoOfZeros {
         if(n==0)return cnt;
         if(n%10==0)return count(n/10,++cnt);
         else return count(n/10,cnt);
-
     }
 
     static int cnt=0;

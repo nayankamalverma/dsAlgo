@@ -1,5 +1,6 @@
 package com.dsAlgo.practise;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class search {
@@ -11,6 +12,7 @@ public class search {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
+        Arrays.sort(arr);
         System.out.println("Enter element to be searched: ");
         int target=sc.nextInt();
         System.out.println("index of element is "+ binarySearch(arr,target) );
